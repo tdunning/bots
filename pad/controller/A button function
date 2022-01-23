@@ -17,7 +17,7 @@ p.start(25)
 
 x=raw_input()
     
-    if x=='':
+    if x=='r':
         print("run")
         if(temp1==1):
          GPIO.output(in1,GPIO.HIGH)
