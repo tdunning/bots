@@ -1,4 +1,5 @@
 import functions
+from functions import bar
 
-foo("hello")
+functions.foo("hello")
 bar("there")
