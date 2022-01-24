@@ -16,6 +16,6 @@ def start_stop(event, key, side):
 
 for event in gamepad.read_loop():
     start_stop(event, KEY_LB, "left")
-    start_stop(event, KEY_RB, "right")
+ #   start_stop(event, KEY_RB, "right")
 
 
