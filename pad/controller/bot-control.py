@@ -18,6 +18,7 @@ def start_stop(event, key, side):
             print("stop $side motor")
 print('Aiden3')
 for event in gamepad.read_loop():
+    print('event')
     print('aiden:eventval', event.val , '  event code =', event.code)
     start_stop(event, KEY_LB, "left")
  #   start_stop(event, KEY_RB, "right")
