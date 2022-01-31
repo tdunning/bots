@@ -9,7 +9,7 @@ KEY_UP = 0
 KEY_LB = 310
 KEY_RB = 311
 def start_stop(event, key, side):
-    if event.code == KEY_LB:
+    if event.code == key:
         if event.value == KEY_DOWN:
             print("start $side motor")
         if event.value == KEY_UP:
