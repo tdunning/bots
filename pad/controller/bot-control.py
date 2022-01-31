@@ -10,9 +10,9 @@ KEY_LB = 310
 KEY_RB = 311
 def start_stop(event, key, side):
     if event.code == KEY_LB:
-        if event.val == KEY_DOWN:
+        if event.value == KEY_DOWN:
             print("start $side motor")
-        if event.val == KEY_UP:
+        if event.value == KEY_UP:
             print("stop $side motor")
 for event in gamepad.read_loop():
     print(event)
