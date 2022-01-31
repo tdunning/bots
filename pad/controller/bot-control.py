@@ -1,6 +1,8 @@
 from evdev import InputDevice, categorize, ecodes
-
-gamepad = InputDevice('/dev/input/event0')
+try:
+    gamepad = InputDevice('/dev/input/event0')
+except:
+    gamepad = InputDevice('/dev/input/event9')
 print('Aiden1')
 
 KEY_DOWN = 1
