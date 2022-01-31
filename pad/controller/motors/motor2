@@ -1,0 +1,17 @@
+import motorpower
+
+#what should be the conditional of the while loop
+motorpower(0, 0)
+motorpower(1, 0)
+sleep(0.5)
+
+motorpower(0, 1)
+motorpower(1, 1)
+sleep(0.5)
+
+motorpower(0, 0)
+motorpower(1, 0)
+sleep(0.5)
+
+motorpower(1, 1)
+motorpower(0, 1)
