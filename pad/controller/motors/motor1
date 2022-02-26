@@ -1,3 +1,4 @@
+import RPi.GPIO as GPIO
 on = 1
 off = 0
 motor1=0
