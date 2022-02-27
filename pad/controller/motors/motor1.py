@@ -6,6 +6,7 @@ motor1=0
 motor2=1
 in3= 32
 in4= 31
+GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(in4, GPIO.OUT)
 GPIO.setup(in3, GPIO.OUT)
@@ -32,4 +33,5 @@ def motorpower(motor, power):
         if power == reverse:
             GPIO.output(in3, GPIO.LOW)
             GPIO.output(in4, GPIO.HIGH)
-
+motorpower(0, off)
+motorpower(1, off)
