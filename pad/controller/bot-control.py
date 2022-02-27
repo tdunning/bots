@@ -1,4 +1,4 @@
-import motor1
+from motors import motor1
 from evdev import InputDevice, categorize, ecodes
 try:
     gamepad = InputDevice('/dev/input/event0')
