@@ -7,8 +7,8 @@ motor2=1
 in3= 34
 in4= 33
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(in4. GPIO.OUT)
-GPIO.setup(in3. GPIO.OUT)
+GPIO.setup(in4, GPIO.OUT)
+GPIO.setup(in3, GPIO.OUT)
 
 def motorpower(motor, power):
     if motor == motor1: 
