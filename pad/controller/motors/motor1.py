@@ -4,8 +4,8 @@ off = 0
 reverse=-1
 motor1=0
 motor2=1
-in3= 34
-in4= 33
+in3= 32
+in4= 31
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(in4, GPIO.OUT)
 GPIO.setup(in3, GPIO.OUT)
