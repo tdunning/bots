@@ -1,4 +1,4 @@
-import motor1
+import motor1.py
 
 while True:
     motorpower(0, 0)
