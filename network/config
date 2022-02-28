@@ -1,5 +1,5 @@
 [Interface]
-PrivateKey = WPWM3Cxoss69dpWWGCmnMMrAq34tHXd4GsTNUaSoRGQ= 
+PrivateKey = $(cat private) 
 ListenPort = 51820
 
 [Peer]

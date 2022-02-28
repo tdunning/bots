@@ -1,3 +1,3 @@
 apt install wireguard
-echo 0iBD57qmfHCD8LyHUyo4a+8+gi0L3D7Jjud1g2aRkBE= > public
-echo WPWM3Cxoss69dpWWGCmnMMrAq34tHXd4GsTNUaSoRGQ= > private
+wg genkey | tee private | wg pubkey > public
+
