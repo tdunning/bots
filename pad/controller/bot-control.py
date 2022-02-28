@@ -1,9 +1,8 @@
+import sys
 from motors import motor1
 from evdev import InputDevice, categorize, ecodes
-try:
-    gamepad = InputDevice('/dev/input/event0')
-except:
-    gamepad = InputDevice('/dev/input/event9')
+
+gamepad = InputDevice('/dev/input' + sys.argv[1])
 
 KEY_DOWN = 1
 KEY_UP = 0
