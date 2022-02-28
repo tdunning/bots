@@ -11,12 +11,12 @@ KEY_RB = 311
 def start_stop(event, key, side):
     if event.code == key:
         if event.value == KEY_DOWN:
-            motor1.motorpower(0, motor1.forward)
+            motor1.motorpower(side, motor1.forward)
         if event.value == KEY_UP:
-            motor1.motorpower(0, motor1.off)
+            motor1.motorpower(side, motor1.off)
 for event in gamepad.read_loop():
     print(event)
-    start_stop(event, KEY_LB, "left")
-    start_stop(event, KEY_RB, "right")
+    start_stop(event, KEY_LB, 0)
+    start_stop(event, KEY_RB, 1)
 print('Aiden4')
 
