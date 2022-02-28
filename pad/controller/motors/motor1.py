@@ -4,6 +4,8 @@ off = 0
 reverse=-1
 motor1=0
 motor2=1
+in1=35 
+in2=36
 in3= 32
 in4= 31
 GPIO.setwarnings(False)
