@@ -1,3 +1,20 @@
-apt install wireguard
+# basic parameters
+export LOCAL_OVERLAY_ADDRESS=10.0.0.201
+export REMOTE_OVERLAY_ADDRESS=10.0.0.4
+export END_POINT=tdunning.com
+
+# install kernel driver for VPN
+sudo apt install -y wireguard
+
+# generate keys ... change perms before writing key
+touch private
+chmod 600 private
 wg genkey | tee private | wg pubkey > public
 
+# insert private key into config file
+(echo 'cat <<!' ; cat config.base ; echo '!') | sh > config
+(echo 'cat <<!' ; cat start.base ; echo '!') | sh > start
+
+# display public key for copy pasta
+echo Public key is
+cat public

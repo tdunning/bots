@@ -4,6 +4,6 @@ ListenPort = 51820
 
 [Peer]
 PublicKey = yUebVSlOOuJHFzgnoVqK8TZte7xsc/slPkUerqpsogA=
-AllowedIPs = 10.0.0.4/32
-Endpoint = tdunning.com:51820
+AllowedIPs = $REMOTE_OVERLAY_ADDRESS/32
+Endpoint = $END_POINT:51820
 PersistentKeepalive = 10
