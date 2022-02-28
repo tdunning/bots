@@ -12,6 +12,8 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(in4, GPIO.OUT)
 GPIO.setup(in3, GPIO.OUT)
+GPIO.setup(in1, GPIO.OUT)
+GPIO.setup(in2, GPIO.OUT)
 
 def motorpower(motor, power):
     if motor == motor1: 
