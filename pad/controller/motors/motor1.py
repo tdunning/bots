@@ -25,13 +25,13 @@ def motorpower(motor, power):
 
     if motor == motor2:
         if power == forward:
-            GPIO.output(in3, GPIO.HIGH)
-            GPIO.output(in4, GPIO.LOW)
+            GPIO.output(in1, GPIO.HIGH)
+            GPIO.output(in2, GPIO.LOW)
         if power == off:
-            GPIO.output(in4, GPIO.LOW)
-            GPIO.output(in3, GPIO.LOW)
+            GPIO.output(in1, GPIO.LOW)
+            GPIO.output(in2, GPIO.LOW)
         if power == reverse:
-            GPIO.output(in3, GPIO.LOW)
-            GPIO.output(in4, GPIO.HIGH)
+            GPIO.output(in1, GPIO.LOW)
+            GPIO.output(in2, GPIO.HIGH)
 motorpower(0, off)
 motorpower(1, off)
