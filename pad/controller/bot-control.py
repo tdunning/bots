@@ -9,8 +9,8 @@ KEY_UP = 0
 KEY_LB = 310
 KEY_RB = 311
 KEY_A = 304
-KEY_RT = 5
-KEY_LT = 2
+KEY_x = 307
+KEY_B = 305
 
 def start_stop(event, key, side):
     if event.code == key:
@@ -32,7 +32,7 @@ for event in gamepad.read_loop():
     start_stop(event, KEY_RB, 1)
     start_stop(event, KEY_A, 2)
     start_stop(event, KEY_A, 3)
-    back_stop(event, KEY_RT, 1)
-    back_stop(event, KEY_LT, 0)
+    back_stop(event, KEY_X, 1)
+    back_stop(event, KEY_B, 0)
 print('Aiden4')
 
