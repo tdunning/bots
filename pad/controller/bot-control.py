@@ -9,7 +9,7 @@ KEY_UP = 0
 KEY_LB = 310
 KEY_RB = 311
 KEY_A = 304
-KEY_x = 307
+KEY_X = 307
 KEY_B = 305
 
 def start_stop(event, key, side):
